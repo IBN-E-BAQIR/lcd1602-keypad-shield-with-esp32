@@ -24,7 +24,7 @@ int read_LCD_buttons() {
   if (adc_key_in < 1100)  return 2;  // Up
   if (adc_key_in < 2400)  return 3;  // Down
   if (adc_key_in < 3400)  return 4;  // Left
-  if (adc_key_in < 4000)  return 5;  // Select not working for me because it not return any value. May be issue is with my lcd keypad shield
+  if (adc_key_in < 4000)  return 5;  // Select not working for me because it return no value. May be issue is with my lcd keypad shield
   
   return 0;  // Default no button pressed
 }
